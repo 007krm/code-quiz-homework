@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Code Quiz</title>
+  </head>
+  <body>
+    <!-- Code Quiz -->
+    <main class="main-quiz">
+      <!-- high score button -->
+      <button class="highScoreBtn btn">View High Score</button>
+      <!-- timer -->
+      <span class="timer">75</span>
+
+      <!-- START VIEW -->
+      <div class="startView container">
+        <h2>Code Quiz</h2>
+        <p>Take this code quiz!</p>
+        <button class="startQuizBtn btn">Start Quiz</button>
+      </div>
+
+      <!-- QUIZ VIEW -->
+      <div class="quizView container">
+        <!-- quiz q & a -->
+        <h4 class="quizQuestion">...</h4>
+        <ul class="quizAnswersUl">
+          <li class="answer">
+            <button class="btn" id="option1">Answer 1</button>
+          </li>
+          <li class="answer">
+            <button class="btn" id="option2">Answer 2</button>
+          </li>
+          <li class="answer">
+            <button class="btn" id="option3">Answer 3</button>
+          </li>
+          <li class="answer">
+            <button class="btn" id="option4">Answer 4</button>
+          </li>
+        </ul>
+        <hr class="hr" />
+        <p class="correctWrong"></p>
+      </div>
+
+      <!-- END GAME VIEW -->
+      <div class="endGameView container">
+        <label for="highScoreInput">Enter your initials</label>
+        <input
+          type="text"
+          name="highScoreInput"
+          id="highScoreInput"
+          placeholder="Initials"
+        />
+        <button type="submit" class="btn" id="submitScore">Submit Score</button>
+      </div>
+
+      <!-- high score view -->
+      <div class="highScoreView container">
+        <h2>High Scores</h2>
+        <hr class="hr" />
+        <ul class="highScoresUl">
+          <!-- <li class="highScore btn answer"><span class="initals">BM</span> - <span class="score">9000</span></li> -->
+        </ul>
+        <button class="btn-secondary" id="restartGame">Play Again!</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
