@@ -92,10 +92,10 @@ function startQuiz() {
   // show quiz view & timer
   quizView.style.display = "block";
   timer.style.display = "inline";
-  timer.innerHTML = 75;
+  timer.innerHTML = 85;
 
   // start timer
-  let timeLeft = 75;
+  let timeLeft = 85;
   countDown = setInterval(function () {
     if (timeLeft <= 0) {
       clearInterval(countDown);
