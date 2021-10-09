@@ -110,8 +110,8 @@ li {
 }
 
 #highScoreInput:focus {
-  border: 2px solid rgb(0, 0, 0);
-  background-color: #cccf20;
+  border: 2px solid rgb(255, 0, 0);
+  background-color: #a1a31b;
 }
 
 /* HIGH SCORE VIEW */
